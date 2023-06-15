@@ -14,7 +14,19 @@ const Setting = ()=>{
                 <div className={s.wrap__block}>
                     <SetGetClinics />
                 </div>
+                <div className={s.wrap__block}>
+                    <SetChangeClinicInfo />
+                </div>
+                <div className={s.wrap__block}>
+                    <SetWorkTime/>
+                </div>
+                <div className={s.wrap__block}>
+                    <SetAutoAddCard />
+                </div>
                 
+                <div className={s.wrap__block}>
+                    <SetAddPriceList />
+                </div>
             </div>
             
         </div>
