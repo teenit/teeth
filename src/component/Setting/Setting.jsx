@@ -2,6 +2,7 @@ import React from "react";
 import s from "./setting.module.css";
 import SetAddClinic from "./SetAddClinic/SetAddClinic";
 import SetGetClinics from "./SetGetClinics/SetGetClinics";
+import SetAddPriceList from "./SetAddPriceList/SetAddPriceList";
 const Setting = ()=>{
 
     return (
@@ -14,7 +15,9 @@ const Setting = ()=>{
                 <div className={s.wrap__block}>
                     <SetGetClinics />
                 </div>
-                
+                <div className={s.wrap__block}>
+                    <SetAddPriceList />
+                </div>
             </div>
             
         </div>
