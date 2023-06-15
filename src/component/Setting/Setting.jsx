@@ -2,6 +2,11 @@ import React from "react";
 import s from "./setting.module.css";
 import SetAddClinic from "./SetAddClinic/SetAddClinic";
 import SetGetClinics from "./SetGetClinics/SetGetClinics";
+import SetChangeClinicInfo from "./SetChangeClinicInfo/SetChangeClinicInfo";
+import SetWorkTime from "./SetWorkTime/SetWorkTime";
+import SetAutoAddCard from "./SetAutoAddCard/SetAutoAddCard";
+import SetAddPriceList from "./SetAddPriceList/SetAddPriceList";
+
 const Setting = ()=>{
 
     return (
@@ -18,7 +23,7 @@ const Setting = ()=>{
                     <SetChangeClinicInfo />
                 </div>
                 <div className={s.wrap__block}>
-                    <SetWorkTime/>
+                    <SetWorkTime />
                 </div>
                 <div className={s.wrap__block}>
                     <SetAutoAddCard />
