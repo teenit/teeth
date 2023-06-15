@@ -1,0 +1,68 @@
+:root{
+  --main-color: #7199ca;
+  --main-color-opa:#7199ca66;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+header a.active{
+  background-color: rgb(106, 176, 237);
+  border-radius: 5px;
+}
+.content{
+  min-height: calc(100vh - 50px - 30px);
+  display: block;
+}
+input[type="text"], input[type="password"], input[type="email"]{
+  width: calc(100% - 9px);
+  height: 30px;
+  padding-left: 5px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+textarea{
+  width: calc(100% - 9px);
+  border: solid 2px var(--main-color);
+  padding-left: 5px;
+  border-radius: 10px;
+  font-size: 17px;
+}
+input[type="date"]{
+  height: 30px;
+  border: solid 2px var(--main-color);
+  padding-left: 5px;
+  border-radius: 10px;
+  font-size: 15px;
+  display: block;
+}
+select{
+  width: 100%;
+  height: 30px;
+  border: solid 2px var(--main-color);
+  padding-left: 5px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.btn{
+  width: 100%;
+  display: block;
+  background-color: var(--main-color);
+  font-size: 16px;
+  padding: 5px 0;
+  border: none;
+  border-radius: 15px;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: all .3s;
+}
+.btn__max__content{
+  width: max-content;
+  padding: 5px 20px;
+  margin: auto;
+}
+.btn:hover{
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0 0 5px 0 var(--main-color-opa);
+}

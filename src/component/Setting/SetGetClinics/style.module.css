@@ -1,0 +1,16 @@
+.clinic__control__img{
+    width: 20px;
+    cursor: pointer;
+}
+.wrap__clinic{
+    padding: 5px;
+    box-sizing: border-box;
+    border-bottom: solid 1px gray;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+.clinic__control{
+    display: flex;
+    justify-content: space-between;
+}

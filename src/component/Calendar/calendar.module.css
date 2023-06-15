@@ -1,0 +1,11 @@
+.title{
+    text-align: center;
+}
+.inner{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 10px;
+}

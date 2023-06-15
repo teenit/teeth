@@ -1,0 +1,17 @@
+.wrap{
+    width: 80%;
+    margin: auto;
+}
+.inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+.wrap__block{
+    display: grid;
+    gap: 15px;
+    text-align: center;
+    box-shadow: 0 0 1px 0 #000;
+    box-sizing: border-box;
+    padding: 10px;
+}

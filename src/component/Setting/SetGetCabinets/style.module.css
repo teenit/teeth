@@ -1,0 +1,31 @@
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000044;
+    height: 100vh;
+}
+.inner{
+    padding: 50px;
+    min-width: 300px;
+    max-width: 500px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+}
+.close__btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+    cursor: pointer;
+}
+.add__cab{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    
+}
+.contain__img{
+    width: 25px;
+}

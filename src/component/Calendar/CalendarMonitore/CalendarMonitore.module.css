@@ -1,0 +1,33 @@
+.monitor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.date{
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+}
+.control{
+    display: flex;
+    gap: 10px;
+}
+.control__btn{
+    border: none;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.control__arrow{
+    width: 30px;
+    height: 30px;
+}
+.control__btn:hover{
+    transform: scale(1.05);
+}

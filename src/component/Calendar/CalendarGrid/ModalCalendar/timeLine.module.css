@@ -1,0 +1,162 @@
+.wrap{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.time__item{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cab{
+    width: 300px;
+    min-width: 300px;
+    position: relative;
+}
+.line{
+    height: 30px;
+    border-top: solid 1px #000;
+    box-sizing: border-box;
+}
+.cabs{
+    display: flex;
+    overflow-x: scroll;
+}
+.patient{
+    width: 70%;
+    position: absolute;
+ 
+    left: 0;
+   
+    background-color: #dcc8c8;
+}
+.time__item__screen{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.screen__btn{
+    width: 39px;
+    height: 39px;
+    display: grid;
+    grid-template-columns: 13px 13px 13px;
+    grid-template-rows: 13px 13px 13px;
+}
+.wrap__small__block{
+    position: relative;
+    transition: all .3s;
+}
+.wrap__small__block > span{
+    position: absolute;
+    display: block;
+    background-color: #000;
+    transition: all .3s;
+}
+.b1__1{
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+}
+.b1__2{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+}
+.b3__1{
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+}
+.b3__2{
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 3px;
+}
+.b7__1{
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+}
+.b7__2{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+}
+.b9__1{
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+}
+.b9__2{
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 3px;
+}
+.screen__btn.active .b1__1{
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    top: auto;
+}
+.screen__btn.active .b1__2{
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 3px;
+    left: auto;
+}
+
+.screen__btn.active .b3__1{
+    top: auto;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    bottom: 0;
+}
+.screen__btn.active .b3__2{
+    top: 0;
+    right: auto;
+    height: 100%;
+    width: 3px;
+    left: 0;
+}
+.screen__btn.active .b7__1{
+    bottom: auto;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+}
+.screen__btn.active .b7__2{
+    top: 0;
+    left: auto;
+    right: 0;
+    height: 100%;
+    width: 3px;
+}
+.screen__btn.active .b9__1{
+    bottom: auto;
+    left: 0;
+    height: 3px;
+    width: 100%;
+}
+.screen__btn.active .b9__2{
+    top: 0;
+    right: auto;
+    left: 0;
+    height: 100%;
+    width: 3px;
+}
+.cal__data__cab{
+    position: relative;
+}

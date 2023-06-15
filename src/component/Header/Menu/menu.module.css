@@ -1,0 +1,138 @@
+.wrap{
+    width: 100%;
+    height: 50px;
+    background-color: var(--main-color);
+}
+.inner{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+.burger{
+    width: 30px;
+    height: 25px;
+    position: relative;
+}
+.span{
+    position: absolute;
+    display: block;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.s1{
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+.s2{
+    top: 50%;
+    transform: translate(0,-50%);
+    right: 0;
+    width: 70%;
+}
+.s3{
+    top: 50%;
+    transform: translate(0,-50%);
+    right: 0;
+    width: 70%;
+}
+.s4{
+    bottom: 0;
+    right: 0;
+    width: 40%;
+}
+.burger.active .s1{
+    opacity: 0;
+}
+.burger.active .s4{
+    opacity: 0;
+}
+.burger.active .s2{
+    width: 100%;
+    transform: translate(0,-50%) rotate(45deg);
+}
+.burger.active .s3{
+    width: 100%;
+    transform: translate(0,-50%) rotate(-45deg);
+}
+
+.nav__wrap{
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.nav__black{
+    width: 0%;
+    height: 100%;
+    background-color: #00000066;
+    overflow: hidden;
+    animation-name: widthNav;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes widthNav {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+.nav__items{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: auto;
+    padding-top: 15px;
+    gap: 15px;
+}
+.wrap__nav__items{
+    width: 0%;
+    height: 100%;
+    background-color: var(--main-color);
+    overflow: hidden;
+    float: right;
+    animation-name: widthNav;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.link__item{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 0;
+    transition: all .3s;
+}
+.link__item:hover{
+    background-color: rgb(106, 176, 237);
+    border-radius: 5px;
+}
+.link__control{
+    display: block;
+    width: max-content;
+}
+.img__control{
+    width: 30px;
+}
+.control{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
