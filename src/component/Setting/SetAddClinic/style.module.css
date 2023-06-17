@@ -10,6 +10,7 @@
     padding: 20px;
     background-color: #fff;
     border-radius: 20px;
+    min-width: 50%;
 }
 .form{
     display: grid;
