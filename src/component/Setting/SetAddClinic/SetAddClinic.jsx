@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import SetAddClinicModal from "./SetAddClinicModal";
 import s from './style.module.css';
 
-
 const SetAddClinic = ()=>{
 
     const [state, setState] = useState({

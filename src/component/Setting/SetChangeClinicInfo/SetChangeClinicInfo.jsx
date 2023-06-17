@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
+import SetChangeClinicModal from "./SetChangeClinicModal";
 import s from './style.module.css';
 
 const SetChangeClinicInfo = ()=>{
 
-    return(
+    const [state, setState] = useState({
+        modal:false
+    })
+    
+    return(    
         <div>
-            <h2>Внести зміни у загальні анкетні дані</h2>
-            <button className="btn btn__max__content">Внести</button>
+            <div>
+                <h3>Внести зміни у загальні анкетні данні</h3>
+            </div>
+            
+            <div>
+                <button className="btn btn__max__content" onClick={()=>setState({...state,modal:true})}>Додати</button>
+            </div>
+            
+            {state.modal ?<SetChangeClinicModal close = {()=>setState({...state,modal:false})} />:null} 
         </div>
+        
     )
 }
 
