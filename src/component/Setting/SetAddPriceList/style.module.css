@@ -1,0 +1,32 @@
+.wrap__top{
+    font-size: larger;
+    font-weight: 600;
+    border-bottom: solid 3px grey;
+    padding-bottom: 3px;
+}
+.text1{
+    padding-top: 5px;
+    border-bottom: solid 3px grey;
+    padding-bottom: 15px;
+}
+.text2{
+    padding-top: 5px;
+    border-bottom: solid 3px grey;
+    padding-bottom: 10px;
+}
+.text3{
+    padding-top: 5px;
+    border-bottom: solid 3px grey;
+    padding-bottom: 10px;
+}
+.file{
+    padding-top: 10px;
+}
+.btnclass{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.sudi{
+    color: blue;
+    cursor: pointer;
+}
