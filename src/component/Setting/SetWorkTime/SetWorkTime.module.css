@@ -1,0 +1,90 @@
+.wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.rows{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.row__wrap{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.row__panel{
+    display: grid;
+    grid-template-columns: 1fr 1fr 25px;
+    gap: 10px;
+}
+.row__title{
+    border-radius: 0px !important;
+    border: none;
+    border-bottom: solid 3px gray;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: default;
+}
+.row__title:focus{
+    outline: none;
+}
+.input__wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.cross{
+    width: 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.c1,.c2{
+width: 25px;
+height: 3px;
+background-color: red;
+position: relative;
+}
+.c1{
+    transform: rotate(45deg);
+    left: 6.5px;
+}
+.c2{
+    transform: rotate(-45deg);
+    right: 6.5px;
+
+}
+
+.add__row{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.r1,.r2{
+width: 50px;
+height: 5px;
+background-color: gray;
+position: relative;
+}
+.r1{
+    left: 12.5px;
+}
+.r2{
+    transform: rotate(90deg);
+    right: 12.5px;
+}
+.input__wrap p,.input__wrap input{
+    cursor: pointer;
+}
+.input__wrap input:focus{
+    outline: none;
+}
