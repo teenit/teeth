@@ -38,6 +38,7 @@ const SetAddClinicForm = ({close})=>{
                                 type="text" 
                                 required 
                                 sx={sx}
+                            
                                 variant="standard" 
                                 label="Адреса клініки"
                                 onChange={(e)=>{
